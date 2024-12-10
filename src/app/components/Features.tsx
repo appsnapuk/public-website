@@ -1,4 +1,5 @@
 import { CheckCircle } from 'lucide-react'
+import Image from 'next/image'
 
 const features = [
     'Real-time availability updates',
@@ -92,9 +93,10 @@ export default function Features() {
                             </defs>
                             <rect width={784} height={404} fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
                         </svg>
-                        <img
+                        <Image
                             className="relative mx-auto"
                             width={490}
+                            height={490}
                             src="https://placehold.co/490x490"
                             alt="Feature illustration"
                         />

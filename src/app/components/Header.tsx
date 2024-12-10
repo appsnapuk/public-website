@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { BookOpen, Menu } from 'lucide-react'
+import { Menu } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Header() {
     return (
@@ -9,7 +10,7 @@ export default function Header() {
                     <div className="flex items-center">
                         <Link href="/">
                             <span className="sr-only">App Snap UK</span>
-                            <img src="/images/App-Snap-Logo-Small.png" alt="App Snap UK" />
+                            <Image src="/images/App-Snap-Logo-Small.png" alt="App Snap UK" width={50} height={50} />
                         </Link>
                         <div className="hidden ml-10 space-x-8 lg:block">
                             <Link href="#services" className="text-base font-medium text-gray-500 hover:text-gray-900">
