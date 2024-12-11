@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Menu } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Header() {
@@ -31,9 +30,6 @@ export default function Header() {
                         >
                             Get Started
                         </Link>
-                        <button className="lg:hidden">
-                            <Menu className="h-6 w-6 text-gray-400" />
-                        </button>
                     </div>
                 </div>
             </nav>
