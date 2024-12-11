@@ -1,6 +1,8 @@
 'use server'
-
 import nodemailer from 'nodemailer'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 export async function bookDemo(formData: FormData) {
     const name = formData.get('name') as string
