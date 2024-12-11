@@ -97,8 +97,8 @@ export default function Features() {
                             className="relative mx-auto"
                             width={490}
                             height={490}
-                            src="https://placehold.co/490x490"
-                            alt="Feature illustration"
+                            src="/images/softplay.png"
+                            alt="Child in softplay area"
                         />
                     </div>
                 </div>
