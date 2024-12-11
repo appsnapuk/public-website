@@ -8,6 +8,7 @@ import Features from './components/Features'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 import BookingModal from './components/BookingModal'
+import Pricing from './components/Pricing'
 
 export default function Home() {
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -22,6 +23,7 @@ export default function Home() {
                 <Hero />
                 <Services />
                 <Features />
+                <Pricing />
                 <CTA openModal={openModal} />
             </main>
             <Footer />
