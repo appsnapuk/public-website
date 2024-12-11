@@ -7,6 +7,14 @@ export async function bookDemo(formData: FormData) {
     const email = formData.get('email') as string
     const company = formData.get('company') as string
 
+    console.log({
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
+        secure: process.env.SMTP_SECURE,
+        username: process.env.SMTP_USERNAME,
+        password: process.env.SMTP_PASSWORD,
+    })
+
     // Create a transporter using SMTP
     const transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
